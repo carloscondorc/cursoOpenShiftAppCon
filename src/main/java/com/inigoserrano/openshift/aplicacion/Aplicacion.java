@@ -68,8 +68,6 @@ public class Aplicacion extends HttpServlet {
 	      System.out.println("user:"+ System.getenv("MYSQL_USER"));
 	  
 	    System.out.println("pass:"+ System.getenv("MYSQL_PASSWORD"));
-	    
-	    writer.println("Salida GET con BD");
         String host = System.getenv("MYSQL_HOST");
         String baseDatos = System.getenv("MYSQL_DB");
         String usuario = System.getenv("MYSQL_USER");
