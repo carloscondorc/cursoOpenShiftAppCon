@@ -34,8 +34,8 @@ public class Aplicacion extends HttpServlet {
             while(resultSet.next()){
                 writer.println("PersonaID: " + resultSet.getInt("PersonaID"));
                 writer.println("Nombre: " + resultSet.getString("Nombre"));
-                writer.println("Apellido1: " + resultSet.getString("Apellido1"));
-                writer.println("Apellido2: " + resultSet.getString("Apellido2"));
+                writer.println("Apellido1: " + resultSet.getString("Apellidos1"));
+                writer.println("Apellido2: " + resultSet.getString("Apellidos2"));
                 writer.println("Direccion: " + resultSet.getString("Direccion"));
                 writer.println("Poblacion: " + resultSet.getString("Poblacion"));
                 writer.println("-------------------------------------------------");
