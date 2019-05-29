@@ -62,6 +62,13 @@ public class Aplicacion extends HttpServlet {
 
     private Connection connectDatabase() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
+	    writer.println("host:"+ System.getenv("MYSQL_HOST"));
+	      writer.println("db:"+ System.getenv("MYSQL_DB"));
+	      writer.println("user:"+ System.getenv("MYSQL_USER"));
+	  
+	      writer.println("pass:"+ System.getenv("MYSQL_PASSWORD"));
+	    
+	    writer.println("Salida GET con BD");
         String host = System.getenv("MYSQL_HOST");
         String baseDatos = System.getenv("MYSQL_DB");
         String usuario = System.getenv("MYSQL_USER");
